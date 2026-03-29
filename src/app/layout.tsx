@@ -18,15 +18,41 @@ const sans = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://erbygg.xyz"),
-  title: "E&R BYGG AS | Byggefirma i Oslo",
+  title: "E&R BYGG AS | Håndverkere & Byggefirma i Oslo",
   description:
-    "E&R BYGG AS leverer totalrenovering, snekkerarbeid og premium byggeprosjekter i Oslo. Be om gratis befaring i dag.",
-  keywords: ["byggefirma Oslo", "snekker Oslo", "renovering Oslo", "totalrenovering", "gulvlegging"],
+    "E&R BYGG AS er et profesjonelt byggefirma i Oslo med over 270 fullførte prosjekter. Vi utfører totalrenovering, snekkerarbeid, gulvlegging, baderomsoppussing og mye mer – alltid med høy kvalitet og pålitelig levering. Be om gratis befaring i dag.",
+  keywords: [
+    "byggefirma Oslo",
+    "snekker Oslo",
+    "renovering Oslo",
+    "totalrenovering Oslo",
+    "gulvlegging Oslo",
+    "baderomsoppussing Oslo",
+    "håndverker Oslo",
+    "oppussing Oslo",
+    "tømrer Oslo",
+    "E&R BYGG AS",
+  ],
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   openGraph: {
-    title: "E&R BYGG AS",
-    description: "Kvalitet i hver detalj. Bygg som varer.",
+    title: "E&R BYGG AS | Håndverkere & Byggefirma i Oslo",
+    description:
+      "Over 270 fullførte prosjekter og 4.9 i kundetilfredshet. Vi leverer totalrenovering, snekkerarbeid og premium byggeprosjekter i Oslo. Kontakt oss for gratis befaring.",
     type: "website",
     locale: "nb_NO",
+    url: "https://erbygg.xyz",
+    siteName: "E&R BYGG AS",
+    images: [{ url: "/icon.png", width: 512, height: 512, alt: "E&R BYGG AS" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "E&R BYGG AS | Byggefirma i Oslo",
+    description:
+      "Profesjonelt byggefirma i Oslo. Totalrenovering, snekkerarbeid og gulvlegging med over 270 fornøyde kunder.",
+    images: ["/icon.png"],
   },
 };
 
