@@ -15,12 +15,10 @@ export default function Home() {
           loop
           playsInline
           className="absolute inset-0 h-full w-full object-cover"
-          poster="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2400&q=80"
         >
-          <source src="https://videos.pexels.com/video-files/3184287/3184287-hd_1920_1080_25fps.mp4" type="video/mp4" />
+          <source src="/hero-bg1.mov" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/65" />
-        <div className="absolute inset-0 bg-hero-gradient" />
+        <div className="absolute inset-0 bg-black/55" />
 
         <div className="section-shell relative flex min-h-screen items-center pb-32 pt-28 md:pb-20 md:pt-32">
           <div className="w-full">
