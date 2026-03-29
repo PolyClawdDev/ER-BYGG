@@ -17,7 +17,7 @@ const sans = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://erbygg.xyz"),
   title: "E&R BYGG AS | Byggefirma i Oslo",
   description:
     "E&R BYGG AS leverer totalrenovering, snekkerarbeid og premium byggeprosjekter i Oslo. Be om gratis befaring i dag.",

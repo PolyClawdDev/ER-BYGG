@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "http://localhost:3000";
+  const base = "https://erbygg.xyz";
   const routes = ["", "/tjenester", "/prosjekter", "/om-oss", "/kontakt"];
   return routes.map((route) => ({
     url: `${base}${route}`,
