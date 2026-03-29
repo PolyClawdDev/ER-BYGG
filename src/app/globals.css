@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0b0b0b;
+}
+
+.glass-card {
+  @apply border border-white/15 bg-white/5 backdrop-blur-xl;
+}
+
+.section-shell {
+  @apply w-full px-6 lg:px-16 xl:px-24;
+}
+
+.section-title {
+  @apply font-display text-3xl leading-tight text-white md:text-5xl;
+}
+
+.section-subtitle {
+  @apply mt-3 text-base leading-relaxed text-white/70 md:text-lg;
+}
+
+/* ── Marquee ─────────────────────────────────────────── */
+@keyframes marquee-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-right {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+.animate-marquee-left {
+  animation: marquee-left 40s linear infinite;
+}
+.animate-marquee-right {
+  animation: marquee-right 44s linear infinite;
+}
+.marquee-pause:hover .animate-marquee-left,
+.marquee-pause:hover .animate-marquee-right {
+  animation-play-state: paused;
+}
+
+/* ── Luxury border ───────────────────────────────────── */
+.luxury-border {
+  position: relative;
+}
+
+.luxury-border::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(125deg, rgba(255, 255, 255, 0.26), rgba(17, 184, 183, 0.3), rgba(94, 99, 107, 0.22));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
